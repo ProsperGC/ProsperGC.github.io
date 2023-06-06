@@ -38,7 +38,7 @@ var brickOffsetLeft = 30;
 
 var score = 0;
 var bricksVisible;
-var level = 3;
+var level = 1;
 var lives = 99;
 
 var paused = false;
