@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="/assets/json/manifest.json">
+    <script src="assets/js/script.js" defer></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/assets/js/sw.js')
+          .then(() => console.log("Service Worker Registered"))
+          .catch(e => console.log(e));
+      }
+    </script>
+</head>
+<body>
+    <div class="phone">
+        <div id="help">
+            <div id="overlay" onclick="overlayOff()">
+              <div class="text">
+                <h2>Controls</h2>
+                <p>
+                  <span>Phone</span> - To move the paddle on a Mobile Phone, Tilt your mobile device to the left or right. <br>
+                  <span>PC - Arrow keys</span> - To move the paddle using the arrow keys, Use the left or right arrow key. <br>
+                  <span>PC - Mouse/Trackpad</span> - To move the paddle using the cursor, Move your mouse left or right above the paddle. <br>
+                </p>
+              </div>
+            </div>
+              <div id="warning" onclick="warningOff()">
+                <div class="warningtext">
+                  <h2>Warning</h2>
+                  <p>
+                    Please do not change windows or apps while playing this game.                   
+                  </p>
+                  <p>
+                    The game will restart when you click/tap the screen.
+                  </p>
+                </div>
+              </div>
+            <div style="margin-top: -40px;">
+              <button onclick="overlayOn()" title="controls"></button>
+            </div>
+        </div>
+        <canvas id="breakoutCanvas"></canvas>
+    </div>
+</body> 
+</html>
