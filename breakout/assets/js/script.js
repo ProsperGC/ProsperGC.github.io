@@ -192,7 +192,8 @@ function collisionDetection() {
             paused = true;
             message2.style.font = '19px Arial';
             message2.style.color = '#4F6E22';
-            message2.textContent = `You won level ${level}, Click/tap to level up`;
+            message2.innerHTML = `Je hebt level ${level} gewonnen!<br><br>Klik/tik om een level omhoog te gaan`;
+            message2.style.textAlign = 'center';
             message2.style.position = 'absolute';
             message2.style.top = '0';
             message2.style.width = '100%';
@@ -267,7 +268,8 @@ function collisionDetection() {
           lives = 0;
           message2.style.font = '20px Arial';
           message2.style.color = '#4F6E22';
-          message2.textContent = 'GAME OVER!!! Click/tap to restart';
+          message2.innerHTML = 'GAME OVER!!!<br>Klik/tik om opnieuw te spelen';
+          message2.style.textAlign = 'center';
           message2.style.position = 'absolute';
           message2.style.top = '0';
           message2.style.width = '100%';
