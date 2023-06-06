@@ -169,7 +169,7 @@ function collisionDetection() {
               paused = true;
               message2.style.font = '19px Arial';
               message2.style.color = '#4F6E22';
-              message2.innerHTML = `Je hebt het spel uitgespeeld!<br><br>De coordinaten zijn:<br>N 52°06.828, E 004°53.253<br>Cijferslotcode: 976 <br><br>Ga niet uit dit scherm<br>behalve als je de coordinaten<br>heb genoteerd!`;
+              message2.innerHTML = `Je hebt het spel uitgespeeld!<br><br>De coordinaten zijn:<br>N 52°06.828, E 004°53.253<br>Cijferslotcode: 976 <br><br>Ga niet uit dit scherm<br>behalve als alles<br>heb genoteerd!`;
               message2.style.textAlign = 'center';
               message2.style.position = 'absolute';
               message2.style.top = '0';
