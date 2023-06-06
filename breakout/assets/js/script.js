@@ -314,7 +314,7 @@ function drawLevel() {
 function drawLives() {
   ctx.font = '16px Arial';
   ctx.fillStyle = '#4F6E22';
-  ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
+  ctx.fillText(`Levens: ${lives}`, canvas.width - 65, 20);
 }
 
 function drawBall() {
